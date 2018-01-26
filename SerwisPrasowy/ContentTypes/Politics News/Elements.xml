@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: CommonNews (SerwisPrasowy\CommonNews) (0x010039CD2DD8AB95442FABF2AF6AB1636A1C) -->
+  <ContentType ID="0x010039CD2DD8AB95442FABF2AF6AB1636A1C00207C47AE807F483791AF99727AC415A6" Overwrite="FALSE" Name="Politics News" Group="News Content Types" Description="Politics news" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{f4550328-506a-49f2-8e55-ca7ed32a533c}" DisplayName="Country" Required="FALSE" Name="Country" />
+      <FieldRef ID="{6673e793-a6ae-491e-b135-5b3b87e98cea}" DisplayName="Bad News" Required="TRUE" Name="Bad News" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

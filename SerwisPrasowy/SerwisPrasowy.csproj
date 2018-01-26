@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4D1B628-CD51-45DB-AECA-E3F8E1AA6535}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SerwisPrasowy</RootNamespace>
+    <AssemblyName>SerwisPrasowy</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ActiveDeploymentConfiguration>Create WSP</ActiveDeploymentConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebParts\Latest News\Latest News.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Columns\Bad News\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e5ec85f6-4933-468a-a855-2bfe853d9b21}</SharePointProjectItemId>
+    </None>
+    <None Include="Columns\Category\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f729009a-5a60-48a4-9d38-cb84e9ca2ecb}</SharePointProjectItemId>
+    </None>
+    <None Include="Columns\Content\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ef02fce7-0d41-4c7c-a557-5a2977c096e0}</SharePointProjectItemId>
+    </None>
+    <None Include="Columns\Country\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{099b7194-17c8-4552-8948-83d020ee4f99}</SharePointProjectItemId>
+    </None>
+    <None Include="Columns\Image\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b6eebfb2-e924-4cb9-9e0b-a40c0694112b}</SharePointProjectItemId>
+    </None>
+    <None Include="Columns\Movie Genre\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{22bb6df5-dee4-457a-8b79-0baeed480cf1}</SharePointProjectItemId>
+    </None>
+    <None Include="Columns\Movie Released Date\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{45204faa-f665-4f11-8ff4-20cabd57520b}</SharePointProjectItemId>
+    </None>
+    <None Include="Columns\Movie Title\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fe772e6a-7317-43b8-ac8b-dd807728b6b3}</SharePointProjectItemId>
+    </None>
+    <None Include="Columns\Short Description\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4f7b0aab-55e6-4128-945d-3e068c370ce1}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\Cinema News\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ae70f00a-201c-4615-a056-b7d53755073a}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\Common News\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{11c40ca9-6130-4a57-abce-e545f0676e4d}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\Politics News\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{84c07cb0-8224-4f3d-a892-38666dff0256}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{a90f30e7-33a4-4854-a6e5-884b688bf527}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Libraries\Pictures\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{90ffe027-d5f5-433b-83eb-0f86f626bcf7}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Movie Genres\Movie Genres Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{781acb25-9341-46f8-821d-30963f2fe2f3}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Movie Genres\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b3d563de-164c-4159-add3-cfb21c12caf1}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\News Categories\News Categories Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{628e8ba1-4eed-48da-b8b0-b46388adfc16}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\News Categories\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ee167603-7f67-4a13-a165-46afdf3b5735}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\News List\News List Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d86049e9-f1eb-4bbb-b01e-5e79802e11e8}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\News List\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0c33243c-7f6e-4bdb-a74c-6c9ccb568834}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{241d98b6-bae4-448c-8600-6091b44bfce9}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="WebParts\Latest News\Latest News.webpart" />
+    <None Include="WebParts\Latest News\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6d21c393-7e32-4953-a636-9d9a6c8af726}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Columns\Bad News\Elements.xml" />
+    <Content Include="Columns\Category\Elements.xml" />
+    <Content Include="Columns\Content\Elements.xml" />
+    <Content Include="Columns\Country\Elements.xml" />
+    <Content Include="Columns\Image\Elements.xml" />
+    <Content Include="Columns\Movie Genre\Elements.xml" />
+    <Content Include="Columns\Movie Released Date\Elements.xml" />
+    <Content Include="Columns\Movie Title\Elements.xml" />
+    <Content Include="Columns\Short Description\Elements.xml" />
+    <Content Include="ContentTypes\Cinema News\Elements.xml" />
+    <Content Include="ContentTypes\Common News\Elements.xml" />
+    <Content Include="ContentTypes\Politics News\Elements.xml" />
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Libraries\Pictures\Elements.xml" />
+    <Content Include="Lists\Movie Genres\Elements.xml" />
+    <Content Include="Lists\Movie Genres\Movie Genres Instance\Elements.xml" />
+    <Content Include="Lists\Movie Genres\Schema.xml" />
+    <Content Include="Lists\News Categories\Elements.xml" />
+    <Content Include="Lists\News Categories\News Categories Instance\Elements.xml" />
+    <Content Include="Lists\News Categories\Schema.xml" />
+    <Content Include="Lists\News List\Elements.xml" />
+    <Content Include="Lists\News List\News List Instance\Elements.xml" />
+    <Content Include="Lists\News List\Schema.xml" />
+    <Content Include="WebParts\Latest News\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{BB1F664B-9266-4fd6-B973-E1E44974B511}">
+        <DeploymentConfigurations>
+          <DeploymentConfiguration Name="Create WSP">
+            <DeploymentSteps>
+            </DeploymentSteps>
+            <RetractionSteps>
+            </RetractionSteps>
+          </DeploymentConfiguration>
+        </DeploymentConfigurations>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{93b1f156-ec31-4c12-b04e-ab808c365151}"
+       Name="Movie Released Date"
+       DisplayName="Movie Released Date"
+       Type="DateTime"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>
