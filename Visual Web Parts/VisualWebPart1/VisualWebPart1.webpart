@@ -2,13 +2,13 @@
 <webParts>
   <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
     <metaData>
-      <type name="SerwisPrasowy.WebParts.Latest_News.Latest_News, $SharePoint.Project.AssemblyFullName$" />
+      <type name="Visual_Web_Parts.VisualWebPart1.VisualWebPart1, $SharePoint.Project.AssemblyFullName$" />
       <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
     </metaData>
     <data>
       <properties>
-        <property name="Title" type="string">SerwisPrasowy - Latest News</property>
-        <property name="Description" type="string">My Web Part</property>
+        <property name="Title" type="string">Visual Web Parts - VisualWebPart1</property>
+        <property name="Description" type="string">My Visual Web Part</property>
       </properties>
     </data>
   </webPart>

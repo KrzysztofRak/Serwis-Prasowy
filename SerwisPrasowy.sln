@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerwisPrasowy", "SerwisPrasowy\SerwisPrasowy.csproj", "{A4D1B628-CD51-45DB-AECA-E3F8E1AA6535}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visual Web Parts", "Visual Web Parts\Visual Web Parts.csproj", "{30FABB5B-F6CE-4462-84B3-9091B6208EDB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,12 @@ Global
 		{A4D1B628-CD51-45DB-AECA-E3F8E1AA6535}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4D1B628-CD51-45DB-AECA-E3F8E1AA6535}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A4D1B628-CD51-45DB-AECA-E3F8E1AA6535}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{30FABB5B-F6CE-4462-84B3-9091B6208EDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30FABB5B-F6CE-4462-84B3-9091B6208EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30FABB5B-F6CE-4462-84B3-9091B6208EDB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{30FABB5B-F6CE-4462-84B3-9091B6208EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30FABB5B-F6CE-4462-84B3-9091B6208EDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30FABB5B-F6CE-4462-84B3-9091B6208EDB}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

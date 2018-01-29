@@ -50,8 +50,9 @@
     <Reference Include="Microsoft.SharePoint" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EventReceivers\EventReceiver1\EventReceiver1.cs" />
+    <Compile Include="EventReceivers\NewsListItems\NewsListItems.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebParts\Latest News\Latest News.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Columns\Bad News\SharePointProjectItem.spdata">
@@ -78,6 +79,9 @@
     <None Include="Columns\Movie Title\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{fe772e6a-7317-43b8-ac8b-dd807728b6b3}</SharePointProjectItemId>
     </None>
+    <None Include="Columns\Picture\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{91b8b8c8-f668-4e92-aaa8-d630b75c12d8}</SharePointProjectItemId>
+    </None>
     <None Include="Columns\Short Description\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{4f7b0aab-55e6-4128-945d-3e068c370ce1}</SharePointProjectItemId>
     </None>
@@ -90,12 +94,24 @@
     <None Include="ContentTypes\Politics News\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{84c07cb0-8224-4f3d-a892-38666dff0256}</SharePointProjectItemId>
     </None>
+    <None Include="EventReceivers\EventReceiver1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{60a1a326-3c2d-4876-9dde-6a07f8400b7f}</SharePointProjectItemId>
+    </None>
+    <None Include="EventReceivers\NewsListItems\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{eea4abf1-adad-48b4-8119-9b2668981a49}</SharePointProjectItemId>
+    </None>
     <None Include="Features\Feature1\Feature1.feature">
       <FeatureId>{a90f30e7-33a4-4854-a6e5-884b688bf527}</FeatureId>
     </None>
     <None Include="key.snk" />
     <None Include="Libraries\Pictures\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{90ffe027-d5f5-433b-83eb-0f86f626bcf7}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\List1\List1Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bf426c89-5661-4657-be3d-1ca158dfb33e}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\List1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a371f548-bc93-4692-a0d8-35637177e00b}</SharePointProjectItemId>
     </None>
     <None Include="Lists\Movie Genres\Movie Genres Instance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{781acb25-9341-46f8-821d-30963f2fe2f3}</SharePointProjectItemId>
@@ -121,10 +137,6 @@
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
-    <None Include="WebParts\Latest News\Latest News.webpart" />
-    <None Include="WebParts\Latest News\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{6d21c393-7e32-4953-a636-9d9a6c8af726}</SharePointProjectItemId>
-    </None>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -136,14 +148,20 @@
     <Content Include="Columns\Movie Genre\Elements.xml" />
     <Content Include="Columns\Movie Released Date\Elements.xml" />
     <Content Include="Columns\Movie Title\Elements.xml" />
+    <Content Include="Columns\Picture\Elements.xml" />
     <Content Include="Columns\Short Description\Elements.xml" />
     <Content Include="ContentTypes\Cinema News\Elements.xml" />
     <Content Include="ContentTypes\Common News\Elements.xml" />
     <Content Include="ContentTypes\Politics News\Elements.xml" />
+    <Content Include="EventReceivers\EventReceiver1\Elements.xml" />
+    <Content Include="EventReceivers\NewsListItems\Elements.xml" />
     <Content Include="Features\Feature1\Feature1.Template.xml">
       <DependentUpon>Feature1.feature</DependentUpon>
     </Content>
     <Content Include="Libraries\Pictures\Elements.xml" />
+    <Content Include="Lists\List1\Elements.xml" />
+    <Content Include="Lists\List1\List1Instance\Elements.xml" />
+    <Content Include="Lists\List1\Schema.xml" />
     <Content Include="Lists\Movie Genres\Elements.xml" />
     <Content Include="Lists\Movie Genres\Movie Genres Instance\Elements.xml" />
     <Content Include="Lists\Movie Genres\Schema.xml" />
@@ -153,7 +171,6 @@
     <Content Include="Lists\News List\Elements.xml" />
     <Content Include="Lists\News List\News List Instance\Elements.xml" />
     <Content Include="Lists\News List\Schema.xml" />
-    <Content Include="WebParts\Latest News\Elements.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
@@ -168,6 +185,11 @@
           <DeploymentConfiguration Name="Create WSP">
             <DeploymentSteps>
             </DeploymentSteps>
+            <RetractionSteps>
+            </RetractionSteps>
+          </DeploymentConfiguration>
+          <DeploymentConfiguration Name="New Deployment Configuration">
+            <DeploymentSteps>Microsoft.VisualStudio.SharePoint.RetractSolution;Microsoft.VisualStudio.SharePoint.AddSolution;Microsoft.VisualStudio.SharePoint.ActivateFeatures</DeploymentSteps>
             <RetractionSteps>
             </RetractionSteps>
           </DeploymentConfiguration>

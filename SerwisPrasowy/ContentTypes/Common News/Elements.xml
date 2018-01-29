@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <!-- Parent ContentType: Item (0x01) -->
-  <ContentType ID="0x010039CD2DD8AB95442FABF2AF6AB1636A1C" Overwrite="FALSE" Name="Common News" Group="News Content Types" Description="Common news" Inherits="TRUE" Version="0">
+  <ContentType ID="0x010039CD2DD8AB95442FABF2AF6AB1636A1C" Overwrite="TRUE" Name="Common News" Group="News Content Types" Description="Common news" Inherits="TRUE" Version="0">
     <FieldRefs>
       <FieldRef ID="{877e1a59-49b4-4d28-a1b2-90286f603213}" DisplayName="Short Description" Required="TRUE" Name="Short Description" />
       <FieldRef ID="{ee8490b4-f200-4d1e-9128-4f521ea40745}" DisplayName="Content" Required="TRUE" Name="Content" />
-      <FieldRef ID="{4ab692cc-f8e5-4308-9364-03bb10eb8d98}" DisplayName="Image" Required="FALSE" Name="Image" />
+      <FieldRef ID="{4ab692cc-f8e5-4308-9364-03bb10eb8d98}" DisplayName="Image" Required="TRUE" Name="Image" />
       <FieldRef ID="{bea1cebe-a46c-4086-93f7-3c518b301535}" DisplayName="Category" Required="TRUE" Name="Category" />
+      <FieldRef ID="{b3a6a2b4-d0fa-4cee-a5fc-d19b3a9031d6}" DisplayName="Picture" Required="FALSE" Name="Picture" Format="Image" />
     </FieldRefs>
   </ContentType>
 </Elements>

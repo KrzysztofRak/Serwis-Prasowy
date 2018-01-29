@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
   <Field
-       ID="{4ab692cc-f8e5-4308-9364-03bb10eb8d98}"
-       Name="Image"
-       DisplayName="Image"
-       Type="Lookup"
-       Required="TRUE"
+       ID="{b3a6a2b4-d0fa-4cee-a5fc-d19b3a9031d6}"
+       Name="Picture"
+       DisplayName="Picture"
+       Type="URL"
+       Format="Image"
+       Required="FALSE"
        Group="Custom Site Columns">
   </Field>
 </Elements>
