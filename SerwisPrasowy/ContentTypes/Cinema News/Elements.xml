@@ -5,7 +5,7 @@
     <FieldRefs>
       <FieldRef ID="{e8751246-a09e-487c-809f-1e45e21ac723}" DisplayName="Movie Title" Required="FALSE" Name="Movie Title" />
       <FieldRef ID="{93b1f156-ec31-4c12-b04e-ab808c365151}" DisplayName="Movie Released Date" Required="FALSE" Name="Movie Released Date" />
-      <FieldRef ID="{8d462dbf-8f44-4bad-8e09-7c6c28122c6e}" DisplayName="Movie Genre" Required="FALSE" Name="Movie Genre" />
+      <FieldRef ID="{8d462dbf-8f44-4bad-8e09-7c6c28122c6e}" DisplayName="Movie Genre" Required="TRUE" Name="Movie Genre" />
     </FieldRefs>
   </ContentType>
 </Elements>

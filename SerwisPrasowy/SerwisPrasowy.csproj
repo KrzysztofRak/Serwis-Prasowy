@@ -50,7 +50,6 @@
     <Reference Include="Microsoft.SharePoint" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EventReceivers\EventReceiver1\EventReceiver1.cs" />
     <Compile Include="EventReceivers\NewsListItems\NewsListItems.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -94,24 +93,18 @@
     <None Include="ContentTypes\Politics News\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{84c07cb0-8224-4f3d-a892-38666dff0256}</SharePointProjectItemId>
     </None>
-    <None Include="EventReceivers\EventReceiver1\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{60a1a326-3c2d-4876-9dde-6a07f8400b7f}</SharePointProjectItemId>
-    </None>
     <None Include="EventReceivers\NewsListItems\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{eea4abf1-adad-48b4-8119-9b2668981a49}</SharePointProjectItemId>
     </None>
     <None Include="Features\Feature1\Feature1.feature">
-      <FeatureId>{a90f30e7-33a4-4854-a6e5-884b688bf527}</FeatureId>
+      <FeatureId>{fdd5ac5f-bcc2-43c8-8041-7224cd17e251}</FeatureId>
+    </None>
+    <None Include="Features\Feature2\Feature2.feature">
+      <FeatureId>{c1beda1c-e0ab-4c55-be7c-fa8f282bf6dc}</FeatureId>
     </None>
     <None Include="key.snk" />
     <None Include="Libraries\Pictures\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{90ffe027-d5f5-433b-83eb-0f86f626bcf7}</SharePointProjectItemId>
-    </None>
-    <None Include="Lists\List1\List1Instance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{bf426c89-5661-4657-be3d-1ca158dfb33e}</SharePointProjectItemId>
-    </None>
-    <None Include="Lists\List1\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{a371f548-bc93-4692-a0d8-35637177e00b}</SharePointProjectItemId>
     </None>
     <None Include="Lists\Movie Genres\Movie Genres Instance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{781acb25-9341-46f8-821d-30963f2fe2f3}</SharePointProjectItemId>
@@ -125,11 +118,11 @@
     <None Include="Lists\News Categories\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{ee167603-7f67-4a13-a165-46afdf3b5735}</SharePointProjectItemId>
     </None>
-    <None Include="Lists\News List\News List Instance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{d86049e9-f1eb-4bbb-b01e-5e79802e11e8}</SharePointProjectItemId>
+    <None Include="Lists\News\NewsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b8ceb625-4f82-4151-82f2-93fd7c98d741}</SharePointProjectItemId>
     </None>
-    <None Include="Lists\News List\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{0c33243c-7f6e-4bdb-a74c-6c9ccb568834}</SharePointProjectItemId>
+    <None Include="Lists\News\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a9bdab1b-8f72-4c13-b474-057105c7ad87}</SharePointProjectItemId>
     </None>
     <None Include="Package\Package.package">
       <PackageId>{241d98b6-bae4-448c-8600-6091b44bfce9}</PackageId>
@@ -153,24 +146,23 @@
     <Content Include="ContentTypes\Cinema News\Elements.xml" />
     <Content Include="ContentTypes\Common News\Elements.xml" />
     <Content Include="ContentTypes\Politics News\Elements.xml" />
-    <Content Include="EventReceivers\EventReceiver1\Elements.xml" />
     <Content Include="EventReceivers\NewsListItems\Elements.xml" />
     <Content Include="Features\Feature1\Feature1.Template.xml">
       <DependentUpon>Feature1.feature</DependentUpon>
     </Content>
+    <Content Include="Features\Feature2\Feature2.Template.xml">
+      <DependentUpon>Feature2.feature</DependentUpon>
+    </Content>
     <Content Include="Libraries\Pictures\Elements.xml" />
-    <Content Include="Lists\List1\Elements.xml" />
-    <Content Include="Lists\List1\List1Instance\Elements.xml" />
-    <Content Include="Lists\List1\Schema.xml" />
     <Content Include="Lists\Movie Genres\Elements.xml" />
     <Content Include="Lists\Movie Genres\Movie Genres Instance\Elements.xml" />
     <Content Include="Lists\Movie Genres\Schema.xml" />
     <Content Include="Lists\News Categories\Elements.xml" />
     <Content Include="Lists\News Categories\News Categories Instance\Elements.xml" />
     <Content Include="Lists\News Categories\Schema.xml" />
-    <Content Include="Lists\News List\Elements.xml" />
-    <Content Include="Lists\News List\News List Instance\Elements.xml" />
-    <Content Include="Lists\News List\Schema.xml" />
+    <Content Include="Lists\News\Elements.xml" />
+    <Content Include="Lists\News\NewsInstance\Elements.xml" />
+    <Content Include="Lists\News\Schema.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

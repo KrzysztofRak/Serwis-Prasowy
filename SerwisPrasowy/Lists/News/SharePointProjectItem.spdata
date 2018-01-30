@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ProjectItem Type="Microsoft.VisualStudio.SharePoint.ListDefinition" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
   <Files>
-    <ProjectItemFile Source="Elements.xml" Target="News List\" Type="ElementManifest" />
-    <ProjectItemFile Source="Schema.xml" Target="News List\" Type="ElementFile" />
+    <ProjectItemFile Source="Elements.xml" Target="News\" Type="ElementManifest" />
+    <ProjectItemFile Source="Schema.xml" Target="News\" Type="ElementFile" />
   </Files>
   <ExtensionData>
-    <ExtensionDataItem Key="Microsoft.VisualStudio.SharePoint.ListSettings.ListFieldsContentTypeID" Value="0x010052a182061687477db84415e12f1e09e3" />
+    <ExtensionDataItem Key="Microsoft.VisualStudio.SharePoint.ListSettings.ListFieldsContentTypeID" Value="0x01006aef12ad17f347789aea6fc971d4950b" />
   </ExtensionData>
 </ProjectItem>

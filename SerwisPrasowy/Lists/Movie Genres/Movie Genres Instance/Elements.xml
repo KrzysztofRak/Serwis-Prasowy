@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <ListInstance Title="Movie Genres" OnQuickLaunch="TRUE" TemplateType="100" Url="Lists/Movie Genres" Description="News categories list">
+  <ListInstance Title="Movie Genres" OnQuickLaunch="TRUE" TemplateType="100" Url="Lists/Movie Genres" Description="Move genres list">
     <Data>
       <Rows>
         <Row>

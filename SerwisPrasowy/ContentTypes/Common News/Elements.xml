@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <!-- Parent ContentType: Item (0x01) -->
-  <ContentType ID="0x010039CD2DD8AB95442FABF2AF6AB1636A1C" Overwrite="TRUE" Name="Common News" Group="News Content Types" Description="Common news" Inherits="TRUE" Version="0">
+  <ContentType ID="0x010039CD2DD8AB95442FABF2AF6AB1636A1C" Overwrite="FALSE" Name="Common News" Group="News Content Types" Description="Common news" Inherits="TRUE" Version="0">
     <FieldRefs>
       <FieldRef ID="{877e1a59-49b4-4d28-a1b2-90286f603213}" DisplayName="Short Description" Required="TRUE" Name="Short Description" />
       <FieldRef ID="{ee8490b4-f200-4d1e-9128-4f521ea40745}" DisplayName="Content" Required="TRUE" Name="Content" />
