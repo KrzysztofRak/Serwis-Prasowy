@@ -128,6 +128,12 @@
     <None Include="Lists\News\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{a9bdab1b-8f72-4c13-b474-057105c7ad87}</SharePointProjectItemId>
     </None>
+    <None Include="Lists\Subscribers\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3e8fb345-81c0-4080-bd41-5c52d6bbac4c}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Subscribers\SubscribersInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c564bc71-783c-481e-b73e-4337245ba0c1}</SharePointProjectItemId>
+    </None>
     <None Include="Package\Package.package">
       <PackageId>{241d98b6-bae4-448c-8600-6091b44bfce9}</PackageId>
     </None>
@@ -180,6 +186,9 @@
     <Content Include="Lists\News\Elements.xml" />
     <Content Include="Lists\News\NewsInstance\Elements.xml" />
     <Content Include="Lists\News\Schema.xml" />
+    <Content Include="Lists\Subscribers\Elements.xml" />
+    <Content Include="Lists\Subscribers\Schema.xml" />
+    <Content Include="Lists\Subscribers\SubscribersInstance\Elements.xml" />
     <Content Include="SiteTemplates\SERWIS_PRASOWY_TEMPLATE\default.aspx" />
     <Content Include="SiteTemplates\SERWIS_PRASOWY_TEMPLATE\onet.xml" />
     <Content Include="SiteTemplates\SERWIS_PRASOWY_TEMPLATE\webtemp_SERWIS_PRASOWY_TEMPLATE.xml" />
