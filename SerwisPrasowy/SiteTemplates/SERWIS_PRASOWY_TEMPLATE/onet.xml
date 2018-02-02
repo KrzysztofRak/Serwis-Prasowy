@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Title="SERWIS_PRASOWY_TEMPLATE" Revision="2" ListDir="" xmlns:ows="Microsoft SharePoint" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <NavBars>
+  </NavBars>
+  
+  <Configurations>
+    
+    <Configuration ID="0" Name="SERWIS_PRASOWY_TEMPLATE">
+      <Lists/>
+      
+      
+      <SiteFeatures>
+        
+        <Feature ID="8c126234-2cf6-4932-b737-e08847c89b46">
+          <!-- WebParts Feature -->
+        </Feature>
+        
+      </SiteFeatures>
+      
+      
+      <WebFeatures>
+        
+        <!-- Fields Feature -->
+        <Feature ID="36d14636-a271-4468-b902-805f005872b1" />
+
+        <!-- ContentTypes Feature -->
+        <Feature ID="90201d52-3221-4beb-8048-71efca48d684" />
+
+        <!-- Lists Feature -->
+        <Feature ID="0c8b08c2-7727-42cf-a362-737c4cd0498e" />
+        
+      </WebFeatures>
+      
+      
+      <Modules>
+        
+        <Module Name="DefaultBlank" />
+        
+      </Modules>
+    </Configuration>
+    
+  </Configurations>
+  
+  <Modules>
+    <Module Name="DefaultBlank" Url="" Path="">
+      <File Url="default.aspx">
+      </File>
+    </Module>
+  </Modules>
+</Project>

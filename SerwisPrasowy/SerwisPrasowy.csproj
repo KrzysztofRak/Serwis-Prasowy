@@ -13,6 +13,7 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ActiveDeploymentConfiguration>Create WSP</ActiveDeploymentConfiguration>
+    <SandboxedSolution>False</SandboxedSolution>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -54,34 +55,34 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Columns\Bad News\SharePointProjectItem.spdata">
+    <None Include="Fields\Bad News\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{e5ec85f6-4933-468a-a855-2bfe853d9b21}</SharePointProjectItemId>
     </None>
-    <None Include="Columns\Category\SharePointProjectItem.spdata">
+    <None Include="Fields\Category\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{f729009a-5a60-48a4-9d38-cb84e9ca2ecb}</SharePointProjectItemId>
     </None>
-    <None Include="Columns\Content\SharePointProjectItem.spdata">
+    <None Include="Fields\Content\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{ef02fce7-0d41-4c7c-a557-5a2977c096e0}</SharePointProjectItemId>
     </None>
-    <None Include="Columns\Country\SharePointProjectItem.spdata">
+    <None Include="Fields\Country\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{099b7194-17c8-4552-8948-83d020ee4f99}</SharePointProjectItemId>
     </None>
-    <None Include="Columns\Image\SharePointProjectItem.spdata">
+    <None Include="Fields\Image\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{b6eebfb2-e924-4cb9-9e0b-a40c0694112b}</SharePointProjectItemId>
     </None>
-    <None Include="Columns\Movie Genre\SharePointProjectItem.spdata">
+    <None Include="Fields\Movie Genre\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{22bb6df5-dee4-457a-8b79-0baeed480cf1}</SharePointProjectItemId>
     </None>
-    <None Include="Columns\Movie Released Date\SharePointProjectItem.spdata">
+    <None Include="Fields\Movie Released Date\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{45204faa-f665-4f11-8ff4-20cabd57520b}</SharePointProjectItemId>
     </None>
-    <None Include="Columns\Movie Title\SharePointProjectItem.spdata">
+    <None Include="Fields\Movie Title\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{fe772e6a-7317-43b8-ac8b-dd807728b6b3}</SharePointProjectItemId>
     </None>
-    <None Include="Columns\Picture\SharePointProjectItem.spdata">
+    <None Include="Fields\Picture\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{91b8b8c8-f668-4e92-aaa8-d630b75c12d8}</SharePointProjectItemId>
     </None>
-    <None Include="Columns\Short Description\SharePointProjectItem.spdata">
+    <None Include="Fields\Short Description\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{4f7b0aab-55e6-4128-945d-3e068c370ce1}</SharePointProjectItemId>
     </None>
     <None Include="ContentTypes\Cinema News\SharePointProjectItem.spdata">
@@ -96,11 +97,14 @@
     <None Include="EventReceivers\NewsListItems\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{eea4abf1-adad-48b4-8119-9b2668981a49}</SharePointProjectItemId>
     </None>
-    <None Include="Features\Feature1\Feature1.feature">
+    <None Include="Features\Fields\Fields.feature">
       <FeatureId>{fdd5ac5f-bcc2-43c8-8041-7224cd17e251}</FeatureId>
     </None>
-    <None Include="Features\Feature2\Feature2.feature">
-      <FeatureId>{c1beda1c-e0ab-4c55-be7c-fa8f282bf6dc}</FeatureId>
+    <None Include="Features\ContentTypes\ContentTypes.feature">
+      <FeatureId>{fc872f77-ac8b-4278-b1d5-5cf6d7a19c89}</FeatureId>
+    </None>
+    <None Include="Features\Lists\Lists.feature">
+      <FeatureId>{6234de59-8275-4bab-b86c-4eea45e665ae}</FeatureId>
     </None>
     <None Include="key.snk" />
     <None Include="Libraries\Pictures\SharePointProjectItem.spdata">
@@ -130,28 +134,41 @@
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
+    <None Include="PowerShell\DeleteList.ps1" />
+    <None Include="PowerShell\Deploy.ps1" />
+    <None Include="SiteTemplates\SERWIS_PRASOWY_TEMPLATE\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5907e33b-53e1-470e-b299-b534e663ad58}</SharePointProjectItemId>
+    </None>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="Columns\Bad News\Elements.xml" />
-    <Content Include="Columns\Category\Elements.xml" />
-    <Content Include="Columns\Content\Elements.xml" />
-    <Content Include="Columns\Country\Elements.xml" />
-    <Content Include="Columns\Image\Elements.xml" />
-    <Content Include="Columns\Movie Genre\Elements.xml" />
-    <Content Include="Columns\Movie Released Date\Elements.xml" />
-    <Content Include="Columns\Movie Title\Elements.xml" />
-    <Content Include="Columns\Picture\Elements.xml" />
-    <Content Include="Columns\Short Description\Elements.xml" />
+    <ProjectReference Include="..\Visual Web Parts\Visual Web Parts.csproj">
+      <Project>{30fabb5b-f6ce-4462-84b3-9091b6208edb}</Project>
+      <Name>Visual Web Parts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Fields\Bad News\Elements.xml" />
+    <Content Include="Fields\Category\Elements.xml" />
+    <Content Include="Fields\Content\Elements.xml" />
+    <Content Include="Fields\Country\Elements.xml" />
+    <Content Include="Fields\Image\Elements.xml" />
+    <Content Include="Fields\Movie Genre\Elements.xml" />
+    <Content Include="Fields\Movie Released Date\Elements.xml" />
+    <Content Include="Fields\Movie Title\Elements.xml" />
+    <Content Include="Fields\Picture\Elements.xml" />
+    <Content Include="Fields\Short Description\Elements.xml" />
     <Content Include="ContentTypes\Cinema News\Elements.xml" />
     <Content Include="ContentTypes\Common News\Elements.xml" />
     <Content Include="ContentTypes\Politics News\Elements.xml" />
     <Content Include="EventReceivers\NewsListItems\Elements.xml" />
-    <Content Include="Features\Feature1\Feature1.Template.xml">
-      <DependentUpon>Feature1.feature</DependentUpon>
+    <Content Include="Features\Fields\Fields.Template.xml">
+      <DependentUpon>Fields.feature</DependentUpon>
     </Content>
-    <Content Include="Features\Feature2\Feature2.Template.xml">
-      <DependentUpon>Feature2.feature</DependentUpon>
+    <Content Include="Features\ContentTypes\ContentTypes.Template.xml">
+      <DependentUpon>ContentTypes.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Lists\Lists.Template.xml">
+      <DependentUpon>Lists.feature</DependentUpon>
     </Content>
     <Content Include="Libraries\Pictures\Elements.xml" />
     <Content Include="Lists\Movie Genres\Elements.xml" />
@@ -163,7 +180,11 @@
     <Content Include="Lists\News\Elements.xml" />
     <Content Include="Lists\News\NewsInstance\Elements.xml" />
     <Content Include="Lists\News\Schema.xml" />
+    <Content Include="SiteTemplates\SERWIS_PRASOWY_TEMPLATE\default.aspx" />
+    <Content Include="SiteTemplates\SERWIS_PRASOWY_TEMPLATE\onet.xml" />
+    <Content Include="SiteTemplates\SERWIS_PRASOWY_TEMPLATE\webtemp_SERWIS_PRASOWY_TEMPLATE.xml" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,10 @@
+﻿<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="e1c96828-5336-4cd2-b408-022bb3291df9" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="Site Definition.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="SiteTemplates\SerwisPrasowyTemplate\default.aspx" />
+    <TemplateFile Location="SiteTemplates\SerwisPrasowyTemplate\Xml\onet.xml" />
+    <TemplateFile Location="1033\xml\webtemp_SerwisPrasowyTemplate.xml" />
+  </TemplateFiles>
+</Solution>

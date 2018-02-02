@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="SearchNewsUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="SearchNews\" Type="ElementManifest" />
+    <ProjectItemFile Source="SearchNews.webpart" Target="SearchNews\" Type="ElementFile" />
+    <ProjectItemFile Source="SearchNewsUserControl.ascx" Target="CONTROLTEMPLATES\Visual_Web_Parts.WebParts\SearchNews\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Visual_Web_Parts.WebParts.SearchNews" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

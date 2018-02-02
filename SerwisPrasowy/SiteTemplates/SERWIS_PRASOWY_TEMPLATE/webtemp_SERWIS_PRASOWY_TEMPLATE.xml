@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Templates xmlns:ows="Microsoft SharePoint">
+  <Template Name="SERWIS_PRASOWY_TEMPLATE" ID="10025">
+    <Configuration 
+      ID="0" 
+      Title="SERWIS_PRASOWY_TEMPLATE" 
+      Hidden="FALSE" 
+      ImageUrl="/_layouts/images/CPVW.gif" 
+      Description="Wdraża pola, content typy, listy i web party." 
+      DisplayCategory="Serwis Prasowy">
+    </Configuration>
+  </Template>
+</Templates>

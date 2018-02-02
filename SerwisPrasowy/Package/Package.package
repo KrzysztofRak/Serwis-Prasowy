@@ -2,6 +2,10 @@
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="241d98b6-bae4-448c-8600-6091b44bfce9" solutionId="241d98b6-bae4-448c-8600-6091b44bfce9" resetWebServer="false" name="SerwisPrasowy" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
   <features>
     <featureReference itemId="fdd5ac5f-bcc2-43c8-8041-7224cd17e251" />
-    <featureReference itemId="c1beda1c-e0ab-4c55-be7c-fa8f282bf6dc" />
+    <featureReference itemId="fc872f77-ac8b-4278-b1d5-5cf6d7a19c89" />
+    <featureReference itemId="6234de59-8275-4bab-b86c-4eea45e665ae" />
   </features>
+  <projectItems>
+    <projectItemReference itemId="5907e33b-53e1-470e-b299-b534e663ad58" />
+  </projectItems>
 </package>

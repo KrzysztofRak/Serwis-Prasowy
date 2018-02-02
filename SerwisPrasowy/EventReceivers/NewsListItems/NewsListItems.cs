@@ -18,7 +18,7 @@ namespace SerwisPrasowy.EventReceivers.NewsListItems
         {
             base.ItemAdded(properties);
 
-            using (SPSite site = new SPSite("http://devlab.billennium.pl/serwis-prasowy"))
+            using (SPSite site = new SPSite("http://devlab.billennium.pl/sites/serwis-prasowy"))
             {
                 using (SPWeb web = site.OpenWeb())
                 {
@@ -28,7 +28,6 @@ namespace SerwisPrasowy.EventReceivers.NewsListItems
                     int imgId = fieldLookupValue.LookupId;
 
                     var img = picturesLib.Items.GetItemById(imgId);
-                    oItem["Title"] = imgId.ToString();
                     oItem["Picture"] = img["URL Path"];
                     oItem.Update();
                 }
